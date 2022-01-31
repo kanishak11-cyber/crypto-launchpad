@@ -1,0 +1,70 @@
+import Image from 'next/image';
+import React from 'react';
+import Promoted from './Promoted';
+import banner from '../Assets/banner.jpg';
+import { FaTelegram, FaTelegramPlane, FaTrophy} from 'react-icons/fa';
+import {BiShieldQuarter} from 'react-icons/bi';
+import {BsFillMicFill, BsImages, BsNewspaper, BsShieldLockFill} from 'react-icons/bs';
+import logo from '../Assets/logo.png';
+import { HiOutlineSpeakerphone } from 'react-icons/hi';
+
+const Welcome = () => {
+    return (
+        <div className='text-stone-200 flex flex-1 flex-row m-2 ms:hidden'>
+            <div className='flex flex-1 flex-col w-full  h-full p-3 '>
+            <button className='w-60 p-3 flex-row flex Justify-center flex-1 white-glassmorphism mt-2 '>
+                    <h1 className='mr-1 p-1 text-2xl font-semibold '><FaTrophy /></h1>
+                    <h2 className='mr-1 p-1 text-m font-semibold   '> Today&apos;s best </h2>
+            </button>
+            <button className='w-60 p-3 flex-row flex Justify-center flex-1 white-glassmorphism mt-2 '>
+                    <h1 className='mr-1 p-1 text-2xl font-semibold '><BsShieldLockFill /></h1>
+                    <h2 className='mr-1 p-1 text-m font-semibold  '> Audit </h2>
+            </button>
+            <button className='w-60 p-3 flex-row flex Justify-center flex-1 white-glassmorphism mt-2 '>
+                    <h1 className='mr-1 p-1 text-2xl font-semibold '><BiShieldQuarter /></h1>
+                    <h2 className='mr-1 p-1 text-m font-semibold  '> KYC </h2>
+            </button>
+            <button className='w-60 p-3 flex-row flex Justify-center flex-1 white-glassmorphism mt-2 '>
+                    <h1 className='mr-1 p-1 text-2xl font-semibold '><HiOutlineSpeakerphone /></h1>
+                    <h2 className='mr-1 p-1 text-m font-semibold  '> Promote </h2>
+            </button>
+            <button className='w-60 p-3 flex-row flex Justify-center flex-1 white-glassmorphism mt-2 '>
+                    <h1 className='mr-1 p-1 text-2xl font-semibold '><BsFillMicFill /></h1>
+                    <h2 className='mr-1 p-1 text-m font-semibold  '> AMA </h2>
+                </button>
+                <button className='w-60 p-3 flex-row flex Justify-center flex-1 white-glassmorphism mt-2 '>
+                    <h1 className='mr-1 p-1 text-2xl font-semibold '><FaTelegramPlane /></h1>
+                    <h2 className='mr-1 p-1 text-m font-semibold  '> Airdrop </h2>
+                </button>
+                <button className='w-60 p-3 flex-row flex Justify-center flex-1 white-glassmorphism mt-2 '>
+                    <h1 className='mr-1 p-1 text-2xl font-semibold '><BsImages/></h1>
+                    <h2 className='mr-1 p-1 text-m font-semibold  '> NFT </h2>
+                </button>
+                <button className='w-60 p-3 flex-row flex Justify-center flex-1 white-glassmorphism mt-2 '>
+                    <h1 className='mr-1 p-1 text-2xl font-semibold '><BsNewspaper /></h1>
+                    <h2 className='mr-1 p-1 text-m font-semibold  '> Blog </h2>
+                </button>
+                <button className='w-60 p-3 flex-row flex Justify-center flex-1 white-glassmorphism mt-2 '>
+                    <Image src={logo} width={30} height={30} alt='coin'/>
+                    <h2 className='mr-1 p-1 text-m font-semibold text-yellow-400  '> LaunchPad <span className='text-white'>Token</span> </h2>
+                </button>
+                <button className='w-60 p-3 flex-row flex Justify-center flex-1 white-glassmorphism mt-2 '>
+                    <h1 className='mr-1 p-1 text-2xl font-semibold '><FaTelegram className='text-blue-400'/></h1>
+                    <h2 className='mr-1 p-1 text-m font-semibold  '> Join Our Group </h2>
+                </button>
+
+            </div>
+            <div className='w-full border-2 mb-2'>
+                <div className='w-full h-40'>
+                    <Image src={banner} width={1280} height={600} alt='banner' />
+                </div>
+                <div>
+                    <Promoted />
+                </div>
+            </div>
+
+        </div>
+    );
+};
+
+export default Welcome;
