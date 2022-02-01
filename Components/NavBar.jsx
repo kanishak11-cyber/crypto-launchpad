@@ -4,6 +4,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 import Image from 'next/image';
 import logo from '../Assets/logo.png';
 import SearchIcon from '@mui/icons-material/Search';
+import Promoted from './Promoted';
 
 const NavBar = () => {
 
@@ -43,7 +44,7 @@ const NavBar = () => {
                         </div>
 
                         <div className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial mr-2'>
-                            <button className='ml-5'>Promote </button>
+                            <button className='ml-5' onClick={`${<Promoted/>}`}>Promote </button>
                             <button className='ml-5'>Add Coin </button>
                             <button className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>Login</button>
                         </div>
