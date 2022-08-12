@@ -9,7 +9,7 @@ import xpr from '../Assets/xrp.png'
 
 const Connect = () => {
     return (
-        <div className='flex flex-row flex-1 p-2 text-white justify-center border-y-2'>
+        <div className='flex flex-row flex-1 p-2 text-white justify-center '>
             <div className='text-white justify-items-center p-10 text-lg font-extralight'>
                 <h2 className=' p-5'>Be the first to know about the next potential coins</h2>
                 <h6 className='p-5 '>Get the outperforming coins in our platform, crypto news and updates right to your inbox!</h6>
