@@ -20,7 +20,7 @@ import { HiOutlineSpeakerphone } from 'react-icons/hi';
 import Link from "next/link";
 
 const style = {
-  wrapper: `gradient-bg-services text-white`,
+  wrapper: `gradient-bg-welcome text-white`,
   listContainer: `flex flex-col mt-3 justify-between `,
   listItem: `p-3 mx-2 flex my-1 Justify-center  align-center`,
   listItemText: ` text-[12px] font-semibold  w-full ml-1`,
@@ -52,12 +52,15 @@ function MyApp({ Component, pageProps }) {
                   </div>
                 </div>
               </Link>
-              <div className="white-glassmorphism align-center items-center  p-2 text-left text-sm  ">
+              {/* token update section  */}
+              <div className="white-glassmorphism align-center items-center hidden   p-2 text-left text-sm  ">
                 <h1 className="text-yellow-400">
                   Crypto<span className="text-white ml-2">Launchpad</span>
                 </h1>
                 <h2 className="text-center">$0.0000</h2>
               </div>
+
+              {/* search bar */}
               <div className="blue-glassmorphism h-12 mt-5 m-3 flex flex-1 items-center p-2 rounded-full">
                 <div className="justify-between  items-center  ">
                   <SearchIcon />
@@ -78,7 +81,7 @@ function MyApp({ Component, pageProps }) {
                   Login
                 </button>
               </div>
-              <button className="text-4xl">
+              <button className="xl:text-4xl text-lg">
                 <CgProfile />
               </button>
             </div>

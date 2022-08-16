@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Connect from '../Components/Connect'
-import Welcome from '../Components/Welcome'
-
+import Today from '../Components/Today'
 
 export default function Home() {
   return (
@@ -12,8 +11,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className=''>
+      <Today />
         <Connect/>
-        
+       
       </div>
 
       

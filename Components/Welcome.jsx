@@ -10,7 +10,7 @@ import Link from 'next/link';
 
 const styles = {
     wrapper: `text-stone-200 flex flex-row h-16 ms:hidden text-center items-center px-10`,
-    listContainer: `flex flex-row justify-between w-full overflow-x-auto `,
+    listContainer: `flex flex-row justify-between w-full  touch-auto md:overflow-x-hidden overflow-x-scroll scroll-smooth hover:scroll-auto`,
     listItem: `p-3 mx-2 flex Justify-center white-glassmorphism align-center`,
     listItemText:` text-[12px] font-semibold  w-full ml-1`,
     listItemIcon: `text-xl font-semibold`,
